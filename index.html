@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenMap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="reset.css>"
+</head>
+
+<body>
+    <header> 
+      <nav class="horizontal-menu">
+        <ul>
+            <li><a href="comece.html">Sobre</a></li>
+            <li><a href="amor.html">GreenMap</a></li>
+            <li><a href="equipe.html">Natureza</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="sidebar" id="sidebar">
+    <nav>
+        <ul>
+            <li><a href="comece.html">Odeio Pessoas</a></li>
+            <li><a href="amor.html">Odeio Gatos</a></li>
+            <li><a href="equipe.html">Odeio o Vasco</a></li>
+        </ul>
+    </nav>
+</div>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Buscar.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div id="menu">
+          <h1 class="titulo">GreenMap</h1>
+          <img src="log.gif" width="77px" height="77px"></div>
+        </div>
+    </header>
+  <div id="galeria">
+  <h2 style="text-align:center">Galeria</h2>
+  </div>
+  <div class="row">
+    <div class="coluna">
+      <img src="./araçatiba.jpg" style="width:80%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="coluna">
+      <img src="./bandeira.jpg" style="width:80%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="coluna">
+      <img src="./faol2.jpg" style="width:80%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="coluna">
+      <img src="./Farol.jpg" style="width:80%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+    <div class="coluna">
+      <img src="./lagoa.jpg" style="width:80%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    </div>
+    <div class="coluna">
+      <img src="farol.jpg" style="width:80%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+    </div>
+  </div>
+  
+  <div id="ft" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 8</div>
+        <img src="spar.jpeg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 8</div>
+        <img src="paisagem.jpeg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 8</div>
+        <img src="para.webp" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 8</div>
+        <img src="araçatiba.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides">
+          <div class="numbertext">5 / 8</div>
+          <img src="maricaent.webp" style="width:100%">
+      </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 8</div>
+          <img src="maricaent.webp" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+      <div class="coluna">
+        <img class="demo cursor" src="spar.jpeg" style="width:100%" onclick="currentSlide(1)" alt="">
+      </div>
+      <div class="coluna">
+        <img class="demo cursor" src="paisagem.jpeg" style="width:100%" onclick="currentSlide(2)" alt="">
+      </div>
+      <div class="coluna">
+        <img class="demo cursor" src="para.webp" style="width:100%" onclick="currentSlide(3)" alt="">
+      </div>
+      <div class="coluna">
+        <img class="demo cursor" src="araçatiba.jpeg" style="width:100%" onclick="currentSlide(4)" alt="">
+      </div>
+      <div class="coluna">
+          <img class="demo cursor" src="maricaent.webp" style="width:100%" onclick="currentSlide(5)" alt="">
+        </div>
+    </div>
+  </div>
+<!--Accordion-->
+<button class="accordion">Informações gerais</button>
+<div class="panel">
+    <p>Nosso projeto pretende movimentar o turismo local e ajudar na preservação da natureza</p>
+</div>
+
+<button class="accordion">Detalhes do projeto</button>
+<div class="panel">
+    <p>Nosso site pretende te mostrar os melhores e te informar sobre os melhores pontos naturalistas aqui da região de maricá, sempre te deixando informado sobre o local que você deseja. </p>
+</div>
+
+<button class="accordion">Equipe</button>
+<div class="panel">
+    <p>Nossa equipe conta com os desenvolvedores  - Cauã - 
+        Gabriel - Charles - João victor.
+    </p>
+</div>
+
+<div id="midias">Nossas redes sociais:</div>
+
+</div>
+</body>
+<script src="script.js"></script>
+<footer>
+  <div class="redes">
+    <a href="https://www.facebook.com/" id="face"><img src="./icons8-facebook-novo.svg" width="30px" height="30px"></a> 
+    <a href="https://www.instagram.com/" id="insta"> <img src="./icons8-instagram.svg" width="30px"></a>
+    <a href="https://www.linkedin.com/feed/" id="linkedin"><img src="./icons8-linkedin.svg" width="30px"></a>
+  </div>
+<div class="contato">
+  <div id="endereço">Endereço: maricá</div>
+  <div id="telefone">Telefone: 40028922</div>
+  <div id="email">Email: greenmap@gmail.com</div>
+</footer>
+</html>
